@@ -5,12 +5,15 @@ int main() {
     int ch;
     std::cout << "Enter the character: ";
     std::cin>>alpha;
-    ch=(int)alpha;
-    std::cout<<alpha<<"is"<<ch;
-    if(ch>=65&&ch<=90){
+    
+    ch=(int)alpha;                      //Explicit typecasted i/p char to int
+    
+    std::cout<<alpha<<"in numeric is"<<ch;
+    
+    if(ch>=65&&ch<=90){                //(alpha>='A' && alpha<='Z')   Implicit type casting
         std::cout<<"\nUpper Case";
     }
-    else if(ch>=97&&ch<=122){
+    else if(ch>=97&&ch<=122){         //(alpha>='a' && alpha<='z')
         std::cout<<"\nLower Case";
     }
     else
