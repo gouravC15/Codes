@@ -1,0 +1,18 @@
+#include <iostream>
+
+int main() {
+    char alpha;
+    int ch;
+    std::cout << "Enter the character: ";
+    std::cin>>alpha;
+    ch=(int)alpha;
+    std::cout<<alpha<<"is"<<ch;
+    if(ch>=65&&ch<=90){
+        std::cout<<"\nUpper Case";
+    }
+    else{
+        std::cout<<"\nLower Case";
+    }
+
+    return 0;
+}
