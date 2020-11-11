@@ -8,7 +8,7 @@ int main() {
     
     ch=(int)alpha;                      //Explicit typecasted i/p char to int
     
-    std::cout<<alpha<<"in numeric is"<<ch;
+    std::cout<<alpha<<" ASCII is "<<ch;
     
     if(ch>=65&&ch<=90){                //(alpha>='A' && alpha<='Z')   Implicit type casting
         std::cout<<"\nUpper Case";
@@ -17,7 +17,7 @@ int main() {
         std::cout<<"\nLower Case";
     }
     else
-        std::cout<<"Invalid Character";
+        std::cout<<"\nInvalid Character";
 
     return 0;
 }
