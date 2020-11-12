@@ -1,0 +1,14 @@
+#include <iostream>
+
+int main() {
+    int n, rev=0,ldig;
+    std::cin>>n;
+    
+    while(n>0){
+        ldig=n%10;            //gives last digit
+        rev=(rev*10)+ldig;
+        n=n/10;               //to find next ldig
+    }
+std::cout << rev << std::endl;
+    return 0;
+}
